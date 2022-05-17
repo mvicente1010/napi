@@ -17,4 +17,4 @@ use Illuminate\Support\Facades\Route;
 Route::view('/','home')->name('home');
 Route::get('api',[ApiController::class,'index'])->name('api');
 Route::post('api',[ApiController::class,'store'])->name('api1');
-Route::get('api/{id}',[ApiController::class, 'show'])->name('api2');
+Route::get('api/{id}',[ApiController::class, 'show'])->name('api2'); // nueva funcionalidad

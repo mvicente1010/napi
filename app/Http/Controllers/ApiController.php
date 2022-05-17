@@ -42,7 +42,6 @@ class ApiController extends Controller
      */
     public function show($id)
     {
-        //return $id;
         $response = Http::get('https://jobs.backbonesystems.io/api/zip-codes/'.$id);
         $response = $response->json();
         return view('api',['response' => $response]);
